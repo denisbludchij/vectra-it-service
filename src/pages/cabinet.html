@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vectra — Кабінет клієнта (Заявки)</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a class="logo" href="../index.html">vectra</a>
+            <nav class="nav" aria-label="Головне меню">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="../index.html">Головна</a></li>
+                    <li><a class="nav__link" href="services.html">Послуги</a></li>
+                    <li><a class="nav__link nav__link--active" href="cabinet.html">Кабінет</a></li>
+                    <li><a class="nav__link" href="contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="cabinet-header">
+            <h1 class="page-title">Клієнтський вебпортал</h1>
+            <a href="new-request.html" class="btn">+ Створити заявку</a>
+        </div>
+
+        <div class="cabinet-layout">
+            <aside class="filters-sidebar">
+                <h3>Фільтрація</h3>
+                <label>Пошук за ID або ім'ям: <input type="text" class="search-input" placeholder="ID заявки..."></label>
+                <label>Статус: 
+                    <select class="select-box">
+                        <option>Усі статуси</option>
+                        <option>Виконується</option>
+                        <option>Завершено</option>
+                    </select>
+                </label>
+            </aside>
+
+            <section class="requests-list">
+                <article class="request-card">
+                    <div class="request-info">
+                        <span class="request-id">ID заявки: VCT-1047</span>
+                        <h3>Розробка рішення</h3>
+                        <p>Менеджер: Олена Коваль</p>
+                    </div>
+                    <span class="status-badge status-progress">Виконується</span>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>&copy; 2026 Vectra</p>
+        </div>
+    </footer>
+</body>
+</html>
